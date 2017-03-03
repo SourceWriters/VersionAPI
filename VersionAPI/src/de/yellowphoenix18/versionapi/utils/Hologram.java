@@ -138,22 +138,4 @@ public class Hologram {
 			Version_1_11_R1.create(Text, location, DISTANCE, holo);
 		}
     }
-    
-    public void delete() {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
-			Version_1_8_R1.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
-			Version_1_8_R2.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
-			Version_1_8_R3.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
-			Version_1_9_R1.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
-			Version_1_9_R2.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
-			Version_1_10_R1.HoloDelete(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
-			Version_1_11_R1.HoloDelete(holo);
-		}    	
-    }
 }

@@ -101,14 +101,6 @@ public class Version_1_10_R1 {
             }
             all_ents.put(id, entitylist);
     }
-    
-    public static void HoloDelete(int holo_id) {
-    	if(all_ents.containsKey(holo_id)) {
-    		EntityArmorStand entity = (EntityArmorStand) all_ents.get(holo_id);
-    		entity.die();
-    		all_ents.remove(holo_id);
-    	}
-    }
 	/* #########
 	 * TitleAPI
 	   ######### */
