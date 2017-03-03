@@ -2,6 +2,6 @@ name: VersionClasses
 author: YellowPhoenix18
 version: 1.1.2
 
-main: de.yellowphoenix18.versionclasses.VersionClasses
+main: de.yellowphoenix18.versionapi.VersionAPI
 
 commands:
