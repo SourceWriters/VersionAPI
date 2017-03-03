@@ -64,6 +64,8 @@ public class Hologram {
 			Version_1_10_R1.HoloshowPlayer(p, holo);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HoloshowPlayer(p, holo);
+		} else {
+			System.out.println("[VersionAPI] Hologram.showPlayer is not supported of your Spigot-Version!");
 		}
     }
 
@@ -82,6 +84,8 @@ public class Hologram {
 			Version_1_10_R1.HolohidePlayer(p, holo);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HolohidePlayer(p, holo);
+		} else {
+			System.out.println("[VersionAPI] Hologram.hidePlayer is not supported of your Spigot-Version!");
 		}
     }
 
@@ -100,6 +104,8 @@ public class Hologram {
 			Version_1_10_R1.HoloshowAll(holo);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HoloshowAll(holo);
+		} else {
+			System.out.println("[VersionAPI] Hologram.showAll is not supported of your Spigot-Version!");
 		}
     }
 
@@ -118,6 +124,8 @@ public class Hologram {
 			Version_1_10_R1.HolohideAll(holo);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_10_R1.HolohideAll(holo);
+		} else {
+			System.out.println("[VersionAPI] Hologram.hideAll is not supported of your Spigot-Version!");
 		}
     }
 
@@ -136,6 +144,8 @@ public class Hologram {
 			Version_1_10_R1.create(Text, location, DISTANCE, holo);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.create(Text, location, DISTANCE, holo);
+		} else {
+			System.out.println("[VersionAPI] Hologram.create is not supported of your Spigot-Version!");
 		}
     }
 }

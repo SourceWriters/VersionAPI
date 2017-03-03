@@ -27,6 +27,8 @@ public class VersionUtils {
 			Version_1_10_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.sendTitle is not supported of your Spigot-Version!");
 		}
     }
 
@@ -46,6 +48,8 @@ public class VersionUtils {
 			Version_1_10_R1.sendActionBar(p, msg);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.sendActionBar(p, msg);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.sendActionBar is not supported of your Spigot-Version!");
 		}
     }
 
@@ -65,6 +69,8 @@ public class VersionUtils {
 			Version_1_10_R1.sendHeaderAndFooter(p, head, foot);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.sendHeaderAndFooter(p, head, foot);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.sendHeaderAndFooter is not supported of your Spigot-Version!");
 		}
     }
 	
@@ -83,6 +89,8 @@ public class VersionUtils {
 			Version_1_10_R1.respawn(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.respawn(p);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.respawn is not supported of your Spigot-Version!");
 		}
     }
 	
@@ -101,6 +109,8 @@ public class VersionUtils {
 			Version_1_10_R1.changeMOTD(motd);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.changeMOTD(motd);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.setMotd is not supported of your Spigot-Version!");
 		}
     }
 

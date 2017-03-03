@@ -13,7 +13,7 @@ public class Pluginutils {
 		version = getServerVersion();
 		if(!version.equalsIgnoreCase("v1_8_R1") && !version.equalsIgnoreCase("v1_8_R2") && !version.equalsIgnoreCase("v1_8_R3") && !version.equalsIgnoreCase("v1_9_R1") &&
 		   !version.equalsIgnoreCase("v1_9_R2") && !version.equalsIgnoreCase("v1_10_R1") && !version.equalsIgnoreCase("v1_11_R1")) {
-			System.out.println("[VersionClasses] Your Spigot-Version is not supported, disabling VersionClasses...");
+			System.out.println("[VersionAPI] Your Spigot-Version is not supported, disabling VersionClasses...");
 			Bukkit.getPluginManager().disablePlugin(VersionAPI.m);
 		}
 	}
