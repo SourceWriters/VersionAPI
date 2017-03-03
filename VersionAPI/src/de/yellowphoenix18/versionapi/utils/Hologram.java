@@ -40,7 +40,7 @@ public class Hologram {
     }
    
    
-    public void showAllTemp(final Player p,int Time){
+    public void showAllTemp(int Time){
             showAll();
             Bukkit.getScheduler().runTaskLater(VersionAPI.m, new Runnable() {
                     public void run() {

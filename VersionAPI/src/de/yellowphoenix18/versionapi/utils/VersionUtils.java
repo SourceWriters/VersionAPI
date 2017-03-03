@@ -10,7 +10,7 @@ import de.yellowphoenix18.versionapi.versions.Version_1_8_R3;
 import de.yellowphoenix18.versionapi.versions.Version_1_9_R1;
 import de.yellowphoenix18.versionapi.versions.Version_1_9_R2;
 
-public class VersionAPI {
+public class VersionUtils {
 	
 	public static void sendTitle(Player player, Integer fadeIn, Integer stay, Integer fadeOut, String title, String subtitle) {
 		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
