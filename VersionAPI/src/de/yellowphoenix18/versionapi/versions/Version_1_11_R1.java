@@ -20,6 +20,7 @@ import net.minecraft.server.v1_11_R1.PacketPlayOutTitle;
 import net.minecraft.server.v1_11_R1.PlayerConnection;
 import net.minecraft.server.v1_11_R1.PacketPlayOutTitle.EnumTitleAction;
 import net.minecraft.server.v1_11_R1.EntityArmorStand;
+import net.minecraft.server.v1_11_R1.EntityPlayer;
 import net.minecraft.server.v1_11_R1.PacketPlayInClientCommand;
 import net.minecraft.server.v1_11_R1.PacketPlayOutEntityDestroy;
 import net.minecraft.server.v1_11_R1.PacketPlayOutSpawnEntityLiving;
@@ -41,6 +42,12 @@ public class Version_1_11_R1 {
 	
 	public static void changeMOTD(String motd) {
 		((CraftServer)Bukkit.getServer()).getServer().setMotd(motd);
+	}
+	
+	public static int getPing(Player p) { 
+		CraftPlayer cp = (CraftPlayer) p; 
+		EntityPlayer ep = cp.getHandle(); 
+		return ep.ping;
 	}
     
 	

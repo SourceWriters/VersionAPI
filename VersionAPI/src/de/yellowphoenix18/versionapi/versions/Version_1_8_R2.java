@@ -15,6 +15,7 @@ import org.bukkit.entity.Player;
 import de.yellowphoenix18.versionapi.VersionAPI;
 import net.minecraft.server.v1_8_R2.PacketPlayInClientCommand.EnumClientCommand;
 import net.minecraft.server.v1_8_R2.EntityArmorStand;
+import net.minecraft.server.v1_8_R2.EntityPlayer;
 import net.minecraft.server.v1_8_R2.PacketPlayInClientCommand;
 import net.minecraft.server.v1_8_R2.PacketPlayOutEntityDestroy;
 import net.minecraft.server.v1_8_R2.PacketPlayOutSpawnEntityLiving;
@@ -42,7 +43,12 @@ public class Version_1_8_R2 {
 	public static void changeMOTD(String motd) {
 		((CraftServer)Bukkit.getServer()).getServer().setMotd(motd);
 	}
-    
+	
+	public static int getPing(Player p) { 
+		CraftPlayer cp = (CraftPlayer) p; 
+		EntityPlayer ep = cp.getHandle(); 
+		return ep.ping;
+	}     
 	
 	/*###############
 	 *    Hologram

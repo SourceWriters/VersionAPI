@@ -12,23 +12,44 @@ import de.yellowphoenix18.versionapi.versions.Version_1_9_R2;
 
 public class VersionUtils {
 	
-	public static void sendTitle(Player player, Integer fadeIn, Integer stay, Integer fadeOut, String title, String subtitle) {
+	public static int getPing(Player p) {
 		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
-			Version_1_8_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_8_R1.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
-			Version_1_8_R2.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_8_R2.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
-			Version_1_8_R3.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_8_R3.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
-			Version_1_9_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_9_R1.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
-			Version_1_9_R2.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_9_R2.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
-			Version_1_10_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_10_R1.getPing(p);
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
-			Version_1_11_R1.sendTitle(player, fadeIn, stay, fadeOut, title, subtitle);
+			return Version_1_11_R1.getPing(p);
 		} else {
-			System.out.println("[VersionAPI] VersionUtils.sendTitle is not supported of your Spigot-Version!");
+			System.out.println("[VersionAPI] VersionUtils.getPing is not supported by your Spigot-Version!");
+			return 1;
+		}		
+	}
+	
+	public static void sendTitle(Player p, Integer fadeIn, Integer stay, Integer fadeOut, String title, String subtitle) {
+		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+			Version_1_8_R1.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+			Version_1_8_R2.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+			Version_1_8_R3.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+			Version_1_9_R1.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+			Version_1_9_R2.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+			Version_1_10_R1.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+			Version_1_11_R1.sendTitle(p, fadeIn, stay, fadeOut, title, subtitle);
+		} else {
+			System.out.println("[VersionAPI] VersionUtils.sendTitle is not supported by your Spigot-Version!");
 		}
     }
 
@@ -49,7 +70,7 @@ public class VersionUtils {
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.sendActionBar(p, msg);
 		} else {
-			System.out.println("[VersionAPI] VersionUtils.sendActionBar is not supported of your Spigot-Version!");
+			System.out.println("[VersionAPI] VersionUtils.sendActionBar is not supported by your Spigot-Version!");
 		}
     }
 
@@ -70,7 +91,7 @@ public class VersionUtils {
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.sendHeaderAndFooter(p, head, foot);
 		} else {
-			System.out.println("[VersionAPI] VersionUtils.sendHeaderAndFooter is not supported of your Spigot-Version!");
+			System.out.println("[VersionAPI] VersionUtils.sendHeaderAndFooter is not supported by your Spigot-Version!");
 		}
     }
 	
@@ -90,7 +111,7 @@ public class VersionUtils {
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.respawn(p);
 		} else {
-			System.out.println("[VersionAPI] VersionUtils.respawn is not supported of your Spigot-Version!");
+			System.out.println("[VersionAPI] VersionUtils.respawn is not supported by your Spigot-Version!");
 		}
     }
 	
@@ -110,7 +131,7 @@ public class VersionUtils {
 		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.changeMOTD(motd);
 		} else {
-			System.out.println("[VersionAPI] VersionUtils.setMotd is not supported of your Spigot-Version!");
+			System.out.println("[VersionAPI] VersionUtils.setMotd is not supported by your Spigot-Version!");
 		}
     }
 

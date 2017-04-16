@@ -23,6 +23,7 @@ import net.minecraft.server.v1_8_R1.PacketPlayOutTitle;
 import net.minecraft.server.v1_8_R1.PlayerConnection;
 import net.minecraft.server.v1_8_R1.ChatSerializer;
 import net.minecraft.server.v1_8_R1.EntityArmorStand;
+import net.minecraft.server.v1_8_R1.EntityPlayer;
 import net.minecraft.server.v1_8_R1.EnumClientCommand;
 import net.minecraft.server.v1_8_R1.EnumTitleAction;
 
@@ -43,7 +44,12 @@ public class Version_1_8_R1 {
 	public static void changeMOTD(String motd) {
 		((CraftServer)Bukkit.getServer()).getServer().setMotd(motd);
 	}
-    
+	
+	public static int getPing(Player p) { 
+		CraftPlayer cp = (CraftPlayer) p; 
+		EntityPlayer ep = cp.getHandle(); 
+		return ep.ping;
+	}    
 	
 	/*###############
 	 *    Hologram
