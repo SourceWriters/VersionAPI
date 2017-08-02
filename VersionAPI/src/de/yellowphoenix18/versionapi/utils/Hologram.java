@@ -24,8 +24,8 @@ public class Hologram {
     public Hologram(String[] Text, Location location) {
             this.Text = Text;
             this.location = location;
-            this.holo = Pluginutils.holo_int;
-            Pluginutils.holo_int++;
+            this.holo = PluginUtils.holo_int;
+            PluginUtils.holo_int++;
             create();
     }
 
@@ -50,19 +50,19 @@ public class Hologram {
     }
    
     public void showPlayer(Player p) {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+		if(PluginUtils.version.equalsIgnoreCase("v1_8_R1")) {
 			Version_1_8_R1.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R2")) {
 			Version_1_8_R2.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R3")) {
 			Version_1_8_R3.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R1")) {
 			Version_1_9_R1.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R2")) {
 			Version_1_9_R2.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_10_R1")) {
 			Version_1_10_R1.HoloshowPlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HoloshowPlayer(p, holo);
 		} else {
 			System.out.println("[VersionAPI] Hologram.showPlayer is not supported of your Spigot-Version!");
@@ -70,19 +70,19 @@ public class Hologram {
     }
 
     public void hidePlayer(Player p) {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+		if(PluginUtils.version.equalsIgnoreCase("v1_8_R1")) {
 			Version_1_8_R1.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R2")) {
 			Version_1_8_R2.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R3")) {
 			Version_1_8_R3.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R1")) {
 			Version_1_9_R1.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R2")) {
 			Version_1_9_R2.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_10_R1")) {
 			Version_1_10_R1.HolohidePlayer(p, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HolohidePlayer(p, holo);
 		} else {
 			System.out.println("[VersionAPI] Hologram.hidePlayer is not supported of your Spigot-Version!");
@@ -90,19 +90,19 @@ public class Hologram {
     }
 
     public void showAll() {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+		if(PluginUtils.version.equalsIgnoreCase("v1_8_R1")) {
 			Version_1_8_R1.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R2")) {
 			Version_1_8_R2.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R3")) {
 			Version_1_8_R3.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R1")) {
 			Version_1_9_R1.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R2")) {
 			Version_1_9_R2.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_10_R1")) {
 			Version_1_10_R1.HoloshowAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.HoloshowAll(holo);
 		} else {
 			System.out.println("[VersionAPI] Hologram.showAll is not supported of your Spigot-Version!");
@@ -110,19 +110,19 @@ public class Hologram {
     }
 
     public void hideAll() {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+		if(PluginUtils.version.equalsIgnoreCase("v1_8_R1")) {
 			Version_1_8_R1.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R2")) {
 			Version_1_8_R2.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R3")) {
 			Version_1_8_R3.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R1")) {
 			Version_1_9_R1.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R2")) {
 			Version_1_9_R2.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_10_R1")) {
 			Version_1_10_R1.HolohideAll(holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_10_R1.HolohideAll(holo);
 		} else {
 			System.out.println("[VersionAPI] Hologram.hideAll is not supported of your Spigot-Version!");
@@ -130,19 +130,19 @@ public class Hologram {
     }
 
     private void create() {
-		if(Pluginutils.version.equalsIgnoreCase("v1_8_R1")) {
+		if(PluginUtils.version.equalsIgnoreCase("v1_8_R1")) {
 			Version_1_8_R1.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R2")) {
 			Version_1_8_R2.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_8_R3")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_8_R3")) {
 			Version_1_8_R3.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R1")) {
 			Version_1_9_R1.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_9_R2")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_9_R2")) {
 			Version_1_9_R2.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_10_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_10_R1")) {
 			Version_1_10_R1.create(Text, location, DISTANCE, holo);
-		} else if(Pluginutils.version.equalsIgnoreCase("v1_11_R1")) {
+		} else if(PluginUtils.version.equalsIgnoreCase("v1_11_R1")) {
 			Version_1_11_R1.create(Text, location, DISTANCE, holo);
 		} else {
 			System.out.println("[VersionAPI] Hologram.create is not supported of your Spigot-Version!");

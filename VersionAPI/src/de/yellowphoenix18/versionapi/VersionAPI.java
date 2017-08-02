@@ -2,7 +2,7 @@ package de.yellowphoenix18.versionapi;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import de.yellowphoenix18.versionapi.utils.Pluginutils;
+import de.yellowphoenix18.versionapi.utils.PluginUtils;
 
 public class VersionAPI extends JavaPlugin {
 	
@@ -10,7 +10,7 @@ public class VersionAPI extends JavaPlugin {
 	
 	public void onEnable() {
 		m = this;
-		Pluginutils.setUp();
+		PluginUtils.setUp();
 	}
 	
 	public void onDisable() {
