@@ -19,6 +19,7 @@ import net.minecraft.server.v1_12_R1.PacketPlayOutPlayerListHeaderFooter;
 import net.minecraft.server.v1_12_R1.PacketPlayOutTitle;
 import net.minecraft.server.v1_12_R1.PlayerConnection;
 import net.minecraft.server.v1_12_R1.PacketPlayOutTitle.EnumTitleAction;
+import net.minecraft.server.v1_12_R1.ChatMessageType;
 import net.minecraft.server.v1_12_R1.EntityArmorStand;
 import net.minecraft.server.v1_12_R1.EntityPlayer;
 import net.minecraft.server.v1_12_R1.PacketPlayInClientCommand;
@@ -132,7 +133,7 @@ public class Version_1_12_R1 {
 
     public static void sendActionBar(Player p, String msg) {
         IChatBaseComponent cbc = IChatBaseComponent.ChatSerializer.a("{\"text\": \"" + msg + "\"}");
-        PacketPlayOutChat ppoc = new PacketPlayOutChat(cbc);
+        PacketPlayOutChat ppoc = new PacketPlayOutChat(cbc, ChatMessageType.GAME_INFO);
         ((CraftPlayer)p).getHandle().playerConnection.sendPacket(ppoc);
     }
 

@@ -1,6 +1,6 @@
 name: VersionAPI
 author: YellowPhoenix18
-version: 1.4
+version: 1.4.1
 
 main: de.yellowphoenix18.versionapi.VersionAPI
 
